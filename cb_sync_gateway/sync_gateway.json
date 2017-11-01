@@ -1,0 +1,15 @@
+{
+    "log": ["*"],
+    "logFilePath": "/home/sync_gateway/sync_gateway.log",
+    "adminInterface": "127.0.0.1:4985",
+    "interface": "0.0.0.0:4984",
+    "databases": {
+        "sync-gateway": {
+            "server": "http://ec2-34-209-159-124.us-west-2.compute.amazonaws.com:8091",
+            "bucket": "sync-gateway",
+            "users": {
+                "GUEST": {"disabled": false, "admin_channels": ["*"] }
+            }
+        }
+    }
+}
